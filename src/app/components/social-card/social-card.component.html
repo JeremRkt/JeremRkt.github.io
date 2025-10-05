@@ -1,0 +1,19 @@
+<!-- social-card.component.html -->
+<article class="social-card" [attr.data-platform]="data.platform">
+  <div class="social-card__border"></div>
+
+  <div class="social-card__header">
+    <img [src]="platformIcon" class="icon" [alt]="data.platform + ' icon'" width="20" height="20" />
+    <span class="social-card__username">{{data.username}}</span>
+  </div>
+
+  <div class="social-card__stats">
+    <p class="social-card__count">{{formatCount(data.count)}}</p>
+    <p class="social-card__label">{{data.label}}</p>
+  </div>
+
+  <div class="social-card__change" [class.positive]="isPositive" [class.negative]="!isPositive">
+    <span class="arrow">{{isPositive ? '\u25b2' : '\u25bc'}}</span>
+    <span>{{Math.abs(data.todayChange)}} Today</span>
+  </div>
+</article>

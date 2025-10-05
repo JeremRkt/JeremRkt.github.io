@@ -1,0 +1,19 @@
+<dashboard-header></dashboard-header>
+
+<main class="container">
+  <section class="social-cards">
+    <app-social-card
+      *ngFor="let card of socialCards"
+      [data]="card">
+    </app-social-card>
+  </section>
+  <section class="overview">
+    <h2 class="overview__title">Overview - Today</h2>
+    <div class="overview-cards">
+      <app-overview-card
+        *ngFor="let card of overviewCards"
+        [data]="card">
+      </app-overview-card>
+    </div>
+  </section>
+</main>

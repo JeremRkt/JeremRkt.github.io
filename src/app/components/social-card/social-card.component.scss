@@ -1,0 +1,85 @@
+.social-card {
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.social-card__border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+}
+
+.social-card[data-platform="facebook"] .social-card__border {
+  background: #178ff5;
+}
+
+.social-card[data-platform="X"] .social-card__border {
+  background: #1da1f2;
+}
+
+.social-card[data-platform="instagram"] .social-card__border {
+  background: linear-gradient(225deg, #df4896 0%, #ee877e 50.91%, #fdc366 100%);
+}
+
+.social-card[data-platform="youtube"] .social-card__border {
+  background: #c4032b;
+}
+
+.social-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.social-card__username {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+.social-card__stats {
+  margin-bottom: 1.5rem;
+}
+
+.social-card__count {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1;
+  margin-bottom: 0.25rem;
+}
+
+.social-card__label {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.social-card__change {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.social-card__change.positive {
+  color: #1db489;
+}
+
+.social-card__change.negative {
+  color: #dc414c;
+}

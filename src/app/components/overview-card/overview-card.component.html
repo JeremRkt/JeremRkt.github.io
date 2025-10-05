@@ -1,0 +1,14 @@
+<article class="overview-card">
+  <div class="overview-card__header">
+    <p class="overview-card__metric">{{data.metric}}</p>
+    <img [src]="platformIcon" class="icon" [alt]="data.platform + ' icon'" width="20" height="20" />
+  </div>
+
+  <div class="overview-card__footer">
+    <p class="overview-card__value">{{data.value}}</p>
+    <p class="overview-card__change" [class.positive]="isPositive" [class.negative]="!isPositive">
+      <span class="arrow">{{isPositive ? '\u25b2' : '\u25bc'}}</span>
+      <span>{{Math.abs(data.changePercent)}}%</span>
+    </p>
+  </div>
+</article>
