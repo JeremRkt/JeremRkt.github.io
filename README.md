@@ -40,8 +40,8 @@ Aperçu du dashboard (Dark Mode) :
 
 ### Liens
 
-- Solution URL : [Ajouter l’URL de la solution ici](https://your-solution-url.com)
-- Live Site URL : [Ajouter l’URL du site ici](https://your-live-site-url.com)
+- Solution URL : [Ajouter l’URL de la solution ici](https://github.com/JeremRkt/JeremRkt.github.io.git)
+- Live Site URL : [Ajouter l’URL du site ici](https://jeremrkt.github.io/)
 
 ## Mon processus
 
